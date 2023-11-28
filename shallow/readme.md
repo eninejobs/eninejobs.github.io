@@ -9,10 +9,10 @@ Create a text file if committing is not applicable
   * [Getting Started](#getting-started)
   * [The Basics](#the-basics)
   * [Models](#models)
-  * [Forms](#forms)
   * [Views](#views)
   * [Templates](#templates)
   * [URLs](#urls)
+  * [Forms](#forms)
   * [Signals](#signals)
   * [Admin](#admin)
   * [Serializers](#serializers)
@@ -131,15 +131,9 @@ class TeamMatch(models.Model):
 - Download all data for the `tournament` app
 - Create a fixture named `tournament.json` in `test_data`
 
-## Forms
-
-### 17. Create a form to create a new match
-
-### 18. Create a form to create new `TeamMatch`
-
 ## Views
 
-### 19. Create a ListView to return a summary of the match data summarized data as follows
+### 17. Create a ListView to return a summary of the match data summarized data as follows
 
 - Return a list of all teams and information about their wins, losses and matches played
 - Use the methods created in 10, 11 and 12
@@ -178,14 +172,14 @@ class TeamMatch(models.Model):
 ]
 ```
 
-### 20. Create a View to display the details of a team and all the related matches
+### 18. Create a View to display the details of a team and all the related matches
 
 - Inherit from DetailView
 - Use the `Team` model
 
 ## Templates
 
-### 21. Create a template to display the context returned in 19 and render as below
+### 19. Create a template to display the context returned in 19 and render as below
 
 - Create a html template called `team_list.html`
 
@@ -197,24 +191,30 @@ class TeamMatch(models.Model):
 | KLM  | 4 | 1 | 3 |   2 |
 
 
-### 22. Each team name should be a link to the detail page created in 20
+### 20. Each team name should be a link to the detail page created in 20
 
 - Create a html template called `team_view.html`
 - Render the output of 18 in this template 
 
 ## URLs
 
-### 23. Create a URL to display the list of teams
+### 21. Create a URL to display the list of teams
 
 - URL: `/teams/`
 - View: [19]
 - Template: [21]
 
-### 24. Create a URL to display the details of a team
+### 22. Create a URL to display the details of a team
 
 - URL: `/teams/<team_name>/`
 - View: [20]
 - Template: [22]
+
+## Forms
+
+### 23. Create a form to create a new match
+
+### 24. Create a form to create new `TeamMatch`
 
 ## Signals
 
