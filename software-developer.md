@@ -46,7 +46,7 @@ We are seeking candidates who are numerate and have relevant expertise in progra
    
 ## Tests
 
-[Django Entrance Test](shallow/)
+[Django Entrance Test](kobayashi-maru/)
 
 Proficiency Test (Coming Soon)
 
